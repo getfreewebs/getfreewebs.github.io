@@ -1,0 +1,277 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #0ABAB5; /* Verde Tiffany */
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  float: left;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+.monaco {
+  font-family: 'DM Serif Display', serif;
+  color: #fff;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #000;
+}
+
+/* Botón de contacto */
+.contact-btn {
+  background-color: white;
+  color: #0ABAB5;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #0ABAB5;
+}
+
+.contact-btn i {
+  margin-right: 5px;
+}
+
+/* Estilos del video de fondo */
+#banner {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Establece la altura del banner al 100% del viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Capa oscura */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 56.25vw; /* 16:9 aspect ratio */
+  max-width: none; /* Elimina la restricción de ancho máximo */
+  transform: translate(-50%, -50%);
+}
+
+.banner-text {
+  position: relative;
+  z-index: 1; /* Asegura que el texto esté por encima del video */
+  padding: 20px;
+  max-width: 90%; /* Asegura que el texto se ajuste bien en dispositivos móviles */
+}
+
+/* Estilos de las secciones */
+section {
+  padding: 50px 0;
+}
+
+section h2 {
+  color: #fff;
+}
+
+/* Estilos de la galería */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 200px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del formulario */
+#contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura completa de la ventana */
+  background-color: #222; /* Fondo oscuro */
+}
+
+.form-container {
+  max-width: 500px;
+  width: 100%;
+  background-color: #333; /* Fondo del formulario */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input, .form textarea, .form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form input, .form textarea {
+  background-color: #444;
+  color: #fff;
+}
+
+.form button {
+  background-color: #0ABAB5;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #089c98;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .logo, nav {
+    float: none;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .contact-btn {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .banner-text {
+    padding: 10px;
+  }
+
+  #contacto {
+    height: auto;
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+
+  .logo, nav {
+    float: none;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .contact-btn {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .banner-text {
+    padding: 10px;
+  }
+
+  #contacto {
+    height: auto;
+    padding: 50px 0;
+  }
+
+  .form-container {
+    padding: 15px;
+  }
+
+  .form input, .form textarea, .form button {
+    font-size: 14px;
+  }
+}

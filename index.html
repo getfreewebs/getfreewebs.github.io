@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monaco</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1><span class="monaco">MONACO</span></h1>
+      </div>
+      <nav>
+        <button class="contact-btn" onclick="window.location.href='tel:1132152494'"><i class="fas fa-phone"></i>CONTACTO</button>
+      </nav>
+    </div>
+  </header>
+  
+  <section id="banner">
+    <div class="video-container">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/L1JoUErVauw?controls=0&autoplay=1&loop=1&mute=1&vq=hd1080&playlist=L1JoUErVauw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="container">
+      <div class="banner-text">
+        <h2>COMPRA & VENTA</h2>
+        <p>compramos y vendemos relojes, arte, oro y plata.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="relojes">
+    <div class="container">
+      <h2>Relojes</h2>
+      <div class="gallery">
+        <img src="/rolex.jpg" alt="Rolex">
+        <img src="/tagheuer.jpg" alt="Tag Heuer">
+        <img src="/patek.jpg" alt="Patek Philippe">
+        <img src="/omega.jpeg" alt="Omega">
+        <!-- Agrega más imágenes de relojes según sea necesario -->
+      </div>
+    </div>
+  </section>
+
+  <section id="arte">
+    <div class="container">
+      <h2>Arte</h2>
+      <div class="gallery">
+        <img src="/arte1.jpg" alt="Arte 1">
+        <img src="/arte2.jpg" alt="Arte 2">
+        <img src="/arte3.jpg" alt="Arte 3">
+        <!-- Agrega más imágenes de arte según sea necesario -->
+      </div>
+    </div>
+  </section>
+
+  <section id="oro-plata">
+    <div class="container">
+      <h2>Oro y Plata</h2>
+      <div class="gallery">
+        <img src="/oro.jpg" alt="Oro">
+        <img src="/plata.jpg" alt="Plata">
+        <!-- Agrega más imágenes de oro y plata según sea necesario -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="form-container">
+      <h2>Contacto</h2>
+      <form action="https://formspree.io/mrgnwqze" method="POST">
+        <input type="text" name="Nombre" placeholder="Nombre" required>
+        <input type="text" name="Apellido" placeholder="Apellido" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        <input type="tel" name="Numero de telefono" placeholder="Número de teléfono" required>
+        <textarea name="Descripción" placeholder="Descripción" rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <p>¡Contáctanos! HH</p>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <p>Recoleta - Palermo - Barrio Parque - Belgrano - Nuñez - Caballito</p>
+      <p style="font-size: 10px;">&copy; 2024 Monaco. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
